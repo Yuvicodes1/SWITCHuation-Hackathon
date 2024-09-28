@@ -1,0 +1,78 @@
+    #home {
+        background-color: darkblue;
+        padding-bottom: 1cm;
+        margin-left:-1cm;
+        margin-right:-1cm;
+        margin-top:-1cm;
+        padding-top: 2cm;
+        padding-bottom: 2cm;
+        height: 5mm;
+    }
+    
+    .topmenu {
+        color: lightgray;
+        margin: 10px;
+        padding: 20px;
+        font-size: 20px;
+        text-decoration:none;
+    }
+    
+    .topmenu:hover {
+        color: white;
+        /* Add the styles here */
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    
+    .topdiv {
+        float: right;
+        padding-right: 1cm;
+    }
+    .logo img {
+        width:25px;
+        margin-right: 10px;
+        float:left;
+    }
+    .all_recommendations {
+        display: flex;
+        align-items: center;
+        margin-left: 1in;
+        flex-direction: row;
+        flex-flow: wrap;
+        padding: 20px;
+      }
+      
+      .recommendation {
+        font-style: italic;
+        text-align: left;
+        width: 21.875rem;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--primary-shadow);
+        padding: 20px;
+        margin: 10px;
+        border:1px solid gray;
+        font-size: 18px;
+        height:150px
+      }
+      
+      .recommendation span {
+        color: darkblue;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .iconbutton{
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        background-color: darkblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        right: 3%;
+        bottom: 3%;
+        cursor: pointer;
+      }
