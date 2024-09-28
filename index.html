@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +10,12 @@
 </head>
 <body>
   <header>
-    <div id="home">
-      <div class="logo">
-        <img src="https://via.placeholder.com/50" alt="Logo">
-      </div>
+    <div id="home"> 
+      <h1>Lending Heroes</h1>
+      <h4 style="color: aliceblue; text-align: center;">Solution for all your money needs</h4>
       <div class="topdiv">
-        <a class="topmenu" href="#login">Login</a>
-        <a class="topmenu" href="#signup">Sign Up</a>
+        <button class="button">LOGIN</button>
+        <button class="button">SIGN UP</button>
       </div>
     </div>
   </header>
@@ -31,7 +31,7 @@
           <p>
             As a seasoned private lender with over 10 years of experience, I specialize in providing flexible loan solutions for small businesses and entrepreneurs. My focus is on building strong, long-term relationships with borrowers to help them achieve their financial goals. 
           </p>
-          <img src="https://via.placeholder.com/300" class="profile_image" alt="Profile Image">
+          <img src="girl.jpg"  alt="Profile Image">
         </div>
       </div>
 
@@ -68,14 +68,45 @@
 
     <button class="next" onclick="moveCarousel(1)">&#10095;</button>
   </section>
-
-  <!-- Information Section -->
-  <section class="information">
-    <h2>For Investors/Lenders</h2>
-    <p>Brief description or link to learn more about investment opportunities.</p>
-    <h2>For Borrowers</h2>
-    <p>Explanation of how borrowers can apply for loans and the benefits of using the platform.</p>
-  </section>
+  <div class="job" >
+    <section id="skills">
+      <h2 style="margin: 10px;">Discover the Power of Our Products</h2>
+      <div style="clear:both;"></div>
+  
+      <div class="all_skills">
+        <div class="skill">
+          <h6>Free Credit Score</h6>
+        </div>  
+  
+        <div class="skill">
+          <h6>Deposit Financing</h6>
+        </div>  
+  
+        <div class="skill">
+          <h6>Wedding Loan</h6>
+        </div>    
+        <div class="skill">
+          <h6>Vacation Loan</h6>
+        </div>
+        <div class="skill">
+          <h6>Credit Card Payment</h6>
+        </div>
+  
+        <div class="skill">
+          <h6>Debt Consolidation</h6>
+        </div>
+  
+        <div class="skill">
+          <h6>Vehicle Loan</h6>
+        </div>
+  
+        <div class="skill">
+          <h6>Education Loans</h6>
+        </div>
+     
+      </div>
+    </section>
+  </div>  
 
   <!-- Recommendations Section -->
   <section id="recommendations">
@@ -105,38 +136,28 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="flex_center">
-      <fieldset>
-        <legend class="introduction">Leave a Recommendation</legend>          
-        <input type="text" placeholder="Name (Optional)"> <br/>
-        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-        <div class="flex_center">
-          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-        </div>
-      </fieldset>
-    </div>
-  </section>
 
   <!-- Contact Us Section -->
-  <section class="contact-us">
+<div class="contact-us">
     <h2>Contact Us</h2>
-    <form>
+    <form style="padding: 10px;">
       <label for="name">Name</label>
       <input type="text" id="name" name="name">
       <label for="email">Email</label>
       <input type="email" id="email" name="email">
+      <br>  
       <label for="message">Message</label>
       <textarea id="message" name="message"></textarea>
+      <br>
       <button type="submit">Submit</button>
     </form>
-  </section>
+  </div>
 
-  <footer>
-    <h2>About Us</h2>
-    <p>Information about the platform, mission, and approach.</p>
+<div class="footer">
+  <footer></footer>
+    <h4>About Us</h4><br><p>Website Developed by PixieDust</p><br><p>Member: P1   P2    P3</p>
   </footer>
+</div>
 
   <script src="script.js"></script> <!-- Link to external JS -->
 </body>
