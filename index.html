@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOST TRUSTED P2P</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="website icon" type="png" href="https://png.pngtree.com/png-vector/20240323/ourmid/pngtree-cash-paper-banknote-money-cash-heap-pile-and-stack-money-png-image_12192877.png">
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
     <div id="home">
       <div class="logo">
-        <!-- Updated image source to a reliable placeholder -->
         <img src="https://via.placeholder.com/50" alt="Logo">
       </div>
       <div class="topdiv">
@@ -21,15 +20,56 @@
     </div>
   </header>
 
-  <section class="hero">
-    <h1>MOST TRUSTED P2P</h1>
-    <div class="image-slider"></div>
-    <div class="call-to-action">
-      <button>Wanna be a Lender? Read more</button>
-      <button>Want a Loan? Read more</button>
+  <!-- Sliding About Me Section -->
+  <section id="about-me-carousel" class="carousel-container">
+    <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+
+    <div class="carousel">
+      <div class="carousel-slide">
+        <div class="about-me">
+          <h1>Hello, I'm Sarah!</h1>
+          <p>
+            As a seasoned private lender with over 10 years of experience, I specialize in providing flexible loan solutions for small businesses and entrepreneurs. My focus is on building strong, long-term relationships with borrowers to help them achieve their financial goals. 
+          </p>
+          <img src="https://via.placeholder.com/300" class="profile_image" alt="Profile Image">
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="about-me">
+          <h1>Hi, I'm Michael!</h1>
+          <p>
+            I’ve been involved in peer-to-peer lending for the past 5 years, helping people access the capital they need for personal projects and business growth. My goal is to ensure every transaction is fair, transparent, and rewarding.
+          </p>
+          <img src="https://via.placeholder.com/300" class="profile_image" alt="Profile Image">
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="about-me">
+          <h1>Welcome! I'm David,</h1>
+          <p>
+            I specialize in providing short-term, asset-backed loans for property investors. My approach focuses on speed and efficiency, ensuring that clients have access to the funds they need without unnecessary delays.
+          </p>
+          <img src="https://via.placeholder.com/300" class="profile_image" alt="Profile Image">
+        </div>
+      </div>
+
+      <div class="carousel-slide">
+        <div class="about-me">
+          <h1>Hi, I'm Lisa!</h1>
+          <p>
+            I’m passionate about helping local communities thrive through responsible lending. Over the past 7 years, I’ve supported entrepreneurs and small businesses in reaching their goals with affordable, transparent loans.
+          </p>
+          <img src="https://via.placeholder.com/300" class="profile_image" alt="Profile Image">
+        </div>
+      </div>
     </div>
+
+    <button class="next" onclick="moveCarousel(1)">&#10095;</button>
   </section>
 
+  <!-- Information Section -->
   <section class="information">
     <h2>For Investors/Lenders</h2>
     <p>Brief description or link to learn more about investment opportunities.</p>
@@ -37,6 +77,7 @@
     <p>Explanation of how borrowers can apply for loans and the benefits of using the platform.</p>
   </section>
 
+  <!-- Recommendations Section -->
   <section id="recommendations">
     <h2>User Testimonials</h2>
     <div style="clear:both;"></div>
@@ -64,14 +105,7 @@
     </div>
   </section>
 
-  <div class="iconbutton">
-    <a href="#home">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    </a>
-  </div>
-
+  <!-- Contact Section -->
   <section id="contact">
     <div class="flex_center">
       <fieldset>
@@ -85,7 +119,7 @@
     </div>
   </section>
 
-
+  <!-- Contact Us Section -->
   <section class="contact-us">
     <h2>Contact Us</h2>
     <form>
@@ -97,16 +131,13 @@
       <textarea id="message" name="message"></textarea>
       <button type="submit">Submit</button>
     </form>
-    <p>Contact Info: Phone number, email, address</p>
-    <div class="loan-calculator"></div>
   </section>
 
   <footer>
     <h2>About Us</h2>
     <p>Information about the platform, mission, and approach.</p>
-    <p>Contact Info: Phone number, email, address</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js"></script> <!-- Link to external JS -->
 </body>
 </html>
