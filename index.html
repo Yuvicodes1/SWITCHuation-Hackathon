@@ -4,21 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOST TRUSTED P2P</title>
-  <link rel="stylesheet" href="style.css"> </head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #home {
+      background-color: darkblue;
+      padding-bottom: 1cm;
+      margin-left:-1cm;
+      margin-right:-1cm;
+      margin-top:-1cm;
+      padding-top: 2cm;
+      padding-bottom: 2cm;
+      height: 5mm;
+    }
+
+    .topmenu {
+      color: lightgray;
+      margin: 10px;
+      padding: 20px;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .topmenu:hover {
+      color: white;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+    .topdiv {
+      float: right;
+      padding-right: 1cm;
+    }
+
+    .logo img {
+      width: 50px; /* Adjusted width for better visibility */
+      height: auto;
+      margin-right: 10px;
+      float: left;
+    }
+  </style>
+</head>
 <body>
   <header>
-    <div class="logo">
+    <div id="home">
+      <div class="logo">
+        <!-- Updated image source to a reliable placeholder -->
+        <img src="https://via.placeholder.com/50" alt="Logo">
       </div>
-    <div class="login-signup">
-      <button>Login</button>
-      <button>Signup</button>
+      <div class="topdiv">
+        <a class="topmenu" href="#login">Login</a>
+        <a class="topmenu" href="#signup">Sign Up</a>
+      </div>
     </div>
   </header>
 
   <section class="hero">
     <h1>MOST TRUSTED P2P</h1>
-    <div class="image-slider">
-      </div>
+    <div class="image-slider"></div>
     <div class="call-to-action">
       <button>Wanna be a Lender? Read more</button>
       <button>Want a Loan? Read more</button>
@@ -32,13 +74,54 @@
     <p>Explanation of how borrowers can apply for loans and the benefits of using the platform.</p>
   </section>
 
-  <section class="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">
-      <p>User testimonial 1</p>
-      <img src="user1.jpg" alt="User 1">
+  <section id="recommendations">
+    <h2>User Testimonials</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+      <div class="recommendation">
+        <span>&#8220;</span>
+        This platform made investing in P2P lending so easy! The returns have been consistent, and the process is seamless.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        As a small business owner, I struggled with traditional loans. This platform connected me with lenders who believed in my vision.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+        <span>&#8220;</span>
+        What I appreciate most is the transparency and the ease of use. I feel in control of my investments, and the support team is always helpful.
+        <span>&#8221;</span>
+      </div>
+      <div class="recommendation">
+          <span>&#8220;</span>
+          I was able to get a loan much faster than through traditional banks. The terms were clear, and the experience was stress-free.
+          <span>&#8221;</span>
+        </div>
     </div>
-    </section>
+  </section>
+
+  <div class="iconbutton">
+    <a href="#home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+
+  <section id="contact">
+    <div class="flex_center">
+      <fieldset>
+        <legend class="introduction">Leave a Recommendation</legend>          
+        <input type="text" placeholder="Name (Optional)"> <br/>
+        <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+        <div class="flex_center">
+          <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+        </div>
+      </fieldset>
+    </div>
+  </section>
+
 
   <section class="contact-us">
     <h2>Contact Us</h2>
@@ -52,8 +135,7 @@
       <button type="submit">Submit</button>
     </form>
     <p>Contact Info: Phone number, email, address</p>
-    <div class="loan-calculator">
-      </div>
+    <div class="loan-calculator"></div>
   </section>
 
   <footer>
@@ -62,5 +144,6 @@
     <p>Contact Info: Phone number, email, address</p>
   </footer>
 
-  <script src="script.js"></script> </body>
+  <script src="script.js"></script>
+</body>
 </html>
